@@ -1,0 +1,26 @@
+{
+    "name": "masud99rana/contact",
+    "description": "This will send email to admin and save contact query in the database.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Masud99Rana",
+            "email": "Masudrana917775@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Masud99Rana\\Contact\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Masud99Rana\\Contact\\ContactServiceProvider"
+            ]
+        }
+    }
+}
