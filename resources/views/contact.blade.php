@@ -10,6 +10,12 @@
 <div class="container">
     <div class="row">
     	<div class="col-md-8 offset-2 mt-5">
+
+
+    		@if ( session()->has('message') )
+    			<p class="alert alert-success">{{ session()->get('message')}}</p>
+    		@endif
+
     		<form accept="{{ route('contact') }}" method="post">
     			@csrf
     		  	<div class="form-group row">
